@@ -1,0 +1,120 @@
+/*Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #92c7fcfb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #2dada7;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.nav {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+/* Estructura principal */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* área principal + aside */
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Contenedor de contenido principal */
+.contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Secciones principales */
+section {
+    background-color: rgb(185, 167, 235);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(255, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+/* Títulos dentro de section */
+section h2 {
+    color: #4f00b6;
+    margin-bottom: 1rem;
+}
+
+/* Artículos */
+article {
+    margin-bottom: 1rem;
+    border-left: 16px solid #0c6dff;
+    padding-left: 1rem;
+}
+
+/* Artículos títulos */
+article h3 {
+    color: #05693a;
+    margin-bottom: 0.5rem;
+}
+
+/* Aside */
+aside {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    color: #00b689;
+    margin-bottom: 1rem;
+}
+
+aside ul {
+    list-style: none;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+aside ul li {
+    margin-bottom: 0.5rem;
+}
+
+aside ul li a {
+    color: #8a028a;
+    text-decoration:underline;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    background-color: #1db4be;
+    color: rgb(221, 174, 233);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    aside {
+        order: -1; /* el aside se muestra arriba en pantallas pequeñas */
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pablo Sanchez Gomez">
+    <meta name="date" content="17/10/2025">
+    <meta name="description" content="proyecto segundo parcial">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="estilo.css">
+    
+    <title>Sugerencia</title>
+
+<body>
+
+    <header>
+        <h1>Sugerencias</h1>
+        <nav>
+            <ul class="nav">
+                    |<a href="index..html">Inicio </a>|
+                    <a href="doc2.html">Creditos </a>|
+                    <a href="doc3.html">Sugerencias</a>|
+                </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2>Nos falto algo? Mandanos tus Sugerencias para futuras modificaciones</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required="">
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required="">
+<br>
+                <label>Sexo:</label>
+                <div class="opciones">
+                    <label><input type="radio" name="sexo" value="masculino"> Masculino</label>
+                    <label><input type="radio" name="sexo" value="femenino"> Femenino</label>
+                </div>
+
+                <label>Intereses:</label>
+                <div class="opciones">
+                    <label><input type="checkbox" name="intereses" value="programacion"> Programación</label>
+                    <label><input type="checkbox" name="intereses" value="diseño"> Diseño</label>
+                    <label><input type="checkbox" name="intereses" value="ciencia"> Ciencia</label>
+                </div>
+
+                <label for="carrera">Tipo de Sugerencia:</label>
+                <select id="carrera" name="carrera" required="">
+                    <option value="">Selecciona tu tipo de Sugerencia</option>
+                    <option value="hate">negativa</option>
+                    <option value="correcion">De Correcion</option>
+                    <option value="update">De mejoria</option>
+                </select>
+<br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>CBTis 142 © 2025 | Revista Digital</p>
+    </footer>
+
+
+
+</body></html>
